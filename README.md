@@ -8,8 +8,8 @@
 ### Tools and Languages:
 <img align="left" alt="pycharm" width="26px" src="pycharm.png" />
 <img align="left" alt="Python" width="30px" src="python.png" />
-<img align="left" alt="pip" width="30px" height="37px" src="pip.png" />
-<img align="left" alt="numpy" width="30px" src="numpy.png" />
+<img align="left" alt="pip" width="36px" height="37px" src="pip.png" />
+<img align="left" alt="numpy" width="36px" src="numpy.png" />
 <img align="left" alt="OpenCV" width="30px" src="opencv.png" />
 <br>
 
