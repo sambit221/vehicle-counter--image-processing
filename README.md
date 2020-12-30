@@ -5,7 +5,6 @@
 -> It automatically detects the vehicles (by marking it with a green rectangle and a red point at the centre) and counts while passing through a particular location. 
 
 -> I have given sample.mp4 along with it to display a sample output of how the code runs.<br>
-![](sample.mov)
 
 ### Tools and Languages:
 <img align="left" alt="pycharm" width="26px" src="pycharm.png" />
