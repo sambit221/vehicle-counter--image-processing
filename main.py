@@ -2,13 +2,12 @@ import cv2
 import numpy as np
 from time import sleep
 
-
 largura_min = 80
 altura_min = 80
 offset = 6
 pos_linha = 550
 
-# FPS do vídeo
+# FPS to vídeo
 delay = 60
 
 detec = []
@@ -50,8 +49,15 @@ while True:
     # It works best on binary images, so we should first apply thresholding techniques, Sobel edges, etc.
     contorno, h = cv2.findContours(dilatada, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
 
+
     # it will create a line
-    cv2.line(frame1, (25, pos_linha), (1200, pos_linha), (255, 127, 0), 3)
+    # Parameters:
+    # image: It is the image on which line is to be drawn.
+    # start_point: It is the starting coordinates of line.
+    # end_point: It is the ending coordinates of line.
+    # color: It is the color of line to be drawn.
+    # thickness: It is the thickness of the line in px.
+    cv2.line(frame1, (25, pos_linha), (1200, pos_linha), (176, 130, 39), 2)
     for(i, c) in enumerate(contorno):
         (x, y, w, h) = cv2.boundingRect(c)
         validar_contorno = (w >= largura_min) and (h >= altura_min)
@@ -68,13 +74,13 @@ while True:
                 carros += 1
                 cv2.line(frame1, (25, pos_linha), (1200, pos_linha), (0, 127, 255), 3)
                 detec.remove((x, y))
-                print("car is detected : " + str(carros))
+                print("No. of cars detected : " + str(carros))
 
     # cv2.putText() method is used to draw a text string on any image.
     # Parameters: image, text, org(coordinate), font, color, thickness
-    cv2.putText(frame1, "VEHICLE COUNT : "+str(carros), (450, 70), cv2.FONT_HERSHEY_SIMPLEX, 2, (0, 0, 255), 5)
+    cv2.putText(frame1, "VEHICLE COUNT : "+str(carros), (320, 70), cv2.FONT_HERSHEY_COMPLEX, 2, (0, 0, 255), 4)
     cv2.imshow("Video Original", frame1)
-    cv2.imshow("Detectar", dilatada)
+    cv2.imshow(" Detectar ", dilatada)
 
     # To display the image, you can use the imshow() method of cv2
     if cv2.waitKey(1) == 27:
