@@ -1,10 +1,22 @@
 # vehicle-counter--image-processing<br>
 ### Project Description
--> vehicle-counter is an image-processing based project made using made using python, OpenCV.<br>
--> This project counts vehicle passing through a particular location.
+-> vehicle-counter is an image-processing based project made using made using python, OpenCV library.<br>
+-> This project counts vehicle passing through a particular point.
 -> It automatically detects the vehicles (by marking it with a green rectangle and a red point at the centre) and counts while passing through a particular location. 
 
--> I have given sample.mp4 along with it to display a sample output of how the code runs.<br>
+# Introduction-
+I love the idea of smart cities. The thought of automated smart energy systems, electrical grids, one-touch access ports – it’s an enthralling concept! Honestly, it’s a dream for a data scientist and I’m delighted that a lot of cities around the world are moving towards becoming smarter. <br>
+One of the core components of a smart city is automated traffic management. And that got me thinking – could I use my data science chops to build a vehicle detection model that could play a part in smart traffic management?
+Think about it – if you could integrate a vehicle detection system in a traffic light camera, you could easily track a number of useful things simultaneously: <br>
+
+* How many vehicles are present at the traffic junction during the day?<br>
+* What time does the traffic build up? <br>
+* What kind of vehicles are traversing the junction (heavy vehicles, cars, etc.)?
+* Is there a way to optimize the traffic and distribute it through a different street?
+* And so on. The applications are endless!
+
+We humans can easily detect and recognize objects from complex scenes in a flash. Translating that thought process to a machine, however, requires us to learn the art of object detection using computer vision algorithms.
+So in this project, we will be building an automatic vehicle detector and counter model.
 
 ### Tools and Languages:
 <img align="left" alt="pycharm" width="26px" src="pycharm.png" />
@@ -33,6 +45,29 @@ pip install times
 -Run the code<br><br>
 
 -> After running the code the output will look like the following : <br>
+
+####   steps followed while making this project:-----
+1.Read the video frame by frame.
+
+2.Apply some fileters to the frame(dilation, etc.).
+
+3.Use BackgroundSubtractor to split the foreground from background(white-foreground, black-background).
+
+4.Detect the contours of the foreground(moving objects).
+
+5.Calculate the centroid of each moving object.
+
+6.For each centroid, detect if there's a nearby centroid of the last frame. If so, assign them to the same vehicle.
+
+7.For each vehicle, detect whether it crossed the target line.
+
+
+# The Idea Behind Detecting Moving Objects in Videos---
+Object detection is a fascinating field in computer vision. It goes to a whole new level when we’re dealing with video data. The complexity rises up a notch, but so do the rewards! <br>
+We can perform super useful high-value tasks such as surveillance, traffic management, fighting crime, etc. using object detection algorithms<br>
+
+
+-> Here is the output of the project <br> 
 
 ### Output
 <img alt="output"  src="op.png" />
