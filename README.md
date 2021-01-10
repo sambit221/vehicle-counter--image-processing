@@ -10,7 +10,7 @@ One of the core components of a smart city is automated traffic management. And 
 Think about it – if you could integrate a vehicle detection system in a traffic light camera, you could easily track a number of useful things simultaneously: <br>
 
 ### It looks like
-<img alt="output"  src="example.jpg" />
+<img alt="output"  src="example.png" />
 
 * How many vehicles are present at the traffic junction during the day?<br>
 * What time does the traffic build up? <br>
