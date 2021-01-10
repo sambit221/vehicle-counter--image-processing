@@ -1,5 +1,5 @@
 # vehicle-counter--image-processing<br>
-### Project Description
+## Project Description
 -> vehicle-counter is an image-processing based project made using made using python, OpenCV library.<br>
 -> This project counts vehicle passing through a particular point.
 -> It automatically detects the vehicles (by marking it with a green rectangle and a red point at the centre) and counts while passing through a particular location. 
@@ -44,9 +44,8 @@ pip install times
 -Download the code from the given github repository<br>
 -Run the code<br><br>
 
--> After running the code the output will look like the following : <br>
 
-####   steps followed while making this project:-----
+###  steps followed while making this project:---
 1.Read the video frame by frame.
 
 2.Apply some fileters to the frame(dilation, etc.).
