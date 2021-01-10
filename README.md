@@ -9,6 +9,9 @@ I love the idea of smart cities. The thought of automated smart energy systems, 
 One of the core components of a smart city is automated traffic management. And that got me thinking – could I use my data science chops to build a vehicle detection model that could play a part in smart traffic management?
 Think about it – if you could integrate a vehicle detection system in a traffic light camera, you could easily track a number of useful things simultaneously: <br>
 
+### It looks like
+<img alt="output"  src="example.jpg" />
+
 * How many vehicles are present at the traffic junction during the day?<br>
 * What time does the traffic build up? <br>
 * What kind of vehicles are traversing the junction (heavy vehicles, cars, etc.)?
